@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F621D99B201A306500CB6C5B /* SAExampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64592D4201A255900ABD282 /* SAExampleClass.swift */; };
 		F64592CE201A222800ABD282 /* SAExample.h in Headers */ = {isa = PBXBuildFile; fileRef = F64592CC201A222800ABD282 /* SAExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -14,6 +15,7 @@
 		F64592C9201A222800ABD282 /* SAExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64592CC201A222800ABD282 /* SAExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAExample.h; sourceTree = "<group>"; };
 		F64592CD201A222800ABD282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64592D4201A255900ABD282 /* SAExampleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAExampleClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F64592CC201A222800ABD282 /* SAExample.h */,
 				F64592CD201A222800ABD282 /* Info.plist */,
+				F64592D4201A255900ABD282 /* SAExampleClass.swift */,
 			);
 			path = SAExample;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					F64592C8201A222800ABD282 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F621D99B201A306500CB6C5B /* SAExampleClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		F64592D2201A222800ABD282 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zucite.SAExample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		F64592D3201A222800ABD282 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
